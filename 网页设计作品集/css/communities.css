@@ -1,0 +1,301 @@
+/* Communities 页面特定样式 */
+body {
+    background-color: #F3F1F0;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.qa-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.qa-description {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.qa-might-ask {
+    color:black;
+    font-size:1.5rem;
+    margin-bottom: 2rem;
+    align-content: center;
+    padding: 2rem;
+}
+
+.action-buttons {
+    margin-bottom: 3rem;
+}
+
+.user-action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.ask-btn, .discuss-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ask-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.discuss-btn {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.ask-btn:hover, .discuss-btn:hover {
+    background-color: #d0d0d0;
+}
+
+/* 问题列表样式 */
+.question-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.question-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-height: 200px;
+}
+
+.placeholder-content {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+.background {
+    padding:2rem;
+    color: dimgray;
+    
+}
+
+/* 响应式布局 */
+@media (max-width: 900px) {
+    .question-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .question-list {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+
+/* 添加新卡片样式 */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #E8E0FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.header-text h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.subhead {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.more-options {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.card-image img {
+  width: 100%; /* 确保图片宽度适配父容器 */
+  height: auto; /* 保持图片比例 */
+}
+.card-image image{
+    width: 100%; /* 图片宽度适配卡片框 */
+    height: 100%; /* 图片高度适配卡片框 */
+    object-fit: cover; /* 保持图片比例并覆盖整个框 */
+    
+}
+
+.card-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.action-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 2rem;
+}
+
+.action-btn.enabled {
+    background-color: #6B4EE6;
+    color: white;
+    border-color: #6B4EE6;
+    margin-top: 2rem;
+}
+
+/* 添加左右布局样式 */
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    
+}
+
+.post-cardlist {
+    flex: 1;
+   
+}
+.post-card {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: 440px;
+    margin-bottom: 1rem;
+}
+
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.sidebar-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.sidebar-card .placeholder-content {
+    height: 120px;
+}
+
+.news-list .placeholder-content {
+    height:100%;
+    margin-bottom: 0.8rem;
+    padding: 5%;
+}
+
+.follow-list .placeholder-content {
+    height: 80px;
+    margin-bottom: 0.8rem;
+}
+
+.footer-content {
+    text-align: center;
+    color: #666;
+}
+
+.text-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+.text-group div {
+      text-align: center;
+    }
+
+.header {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+.source {
+      color:dimgray;
+      font-size: 16px;
+    }
+/* 响应式调整 */
+@media (max-width: 1100px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+} 

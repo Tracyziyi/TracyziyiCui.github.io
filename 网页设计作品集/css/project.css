@@ -1,0 +1,293 @@
+/* Project page css */
+body {
+    background-color: #F3F1F0;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* project container layout */
+.project-container {
+    display: flex;
+    gap: 2rem;
+    min-height: 600px;
+}
+
+/* Left header list style */
+.title-list {
+    width: 200px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-nav a.active {
+    background-color: #EFB23E;
+    color: white;
+}
+
+/* Center map area style */
+.map-section {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.map-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.map-container {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right content area style */
+.content-sidebar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.content-text {
+    min-height: 100px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.intro {
+    margin-bottom: 2rem;
+}
+
+.intro h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.intro p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.content-block {
+    display: none;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content-block h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.content-block p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.media-block {
+    margin-bottom: 2rem;
+}
+
+.media-block h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.media-content {
+    width: 100%;
+    height: 180px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* responsive layout */
+@media (max-width: 1100px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .title-list, .content-sidebar {
+        width: 100%;
+    }
+} 
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.username {
+    font-weight: 500;
+    color: #333;
+}
+
+.publish-date {
+    font-size: 0.85rem;
+    color: #666;
+} 
+
+/* Adding Hidden Classes */
+.project-map, .content-section {
+    display: none;
+}
+
+.project-map.active, .content-section.active {
+    display: block;
+} 
+
+/* Modify map block style */
+.map-block {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.map-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modify content block style */
+.content-block {
+    display: none;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Initial state: display the first block */
+.map-block:first-child,
+.content-block:first-child {
+    display: block;
+} 
+
+/* Add Link Styles */
+.page-header {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-family: serif;
+    font-size: 18px;
+    
+}
+
+.gallery-link {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.gallery-link:hover {
+    background-color: #EFB23E;
+    color: white;
+} 
+/* Add breadcrumb navigation style */
+.breadcrumb {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #EFB23E;
+}
+
+.separator {
+    color: #999;
+    margin: 0 0.5rem;
+}
+
+.current {
+    color: #333;
+    font-weight: 500;
+}

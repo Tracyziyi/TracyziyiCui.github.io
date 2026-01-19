@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communities - HyperCities</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/communities.css">
+    <link rel="stylesheet" href="drop-down_menu.css">
+    <style>
+        a {
+            color: black; /* 设置为黑色或其他颜色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+    </style>
+</head>
+<body>
+    <!-- top navi-->
+    <nav class="top-nav">
+        <div class="logo">
+            <div class="logo-title">
+                <h1><span class="main-title">HyperCities</span> <span class="sub-title">Thick Mapping in the Digital Humanities</span></h1>
+            </div>
+            
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">What is HyperCities</a></li>
+            <li><a href="map-library.html">Map Library</a></li>
+            <li><a href="#">HyperCities Book</a></li>
+            <li><a href="#">User Guide</a></li>
+                      <li class="dropdown">
+            <a href="#" class="dropbtn">Project</a>
+            <ul class="dropdown-content">
+                <li><a href="project-gallery.html">Project Gallery</a></li>
+                <li><a href="project.html">Project Explore</a></li>
+            </ul>
+            </li>
+            <li><a href="communities.html" class="active">Communities</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="sign-in">Sign in</button>
+    </nav>
+     <!-- search bar -->
+     <div class="search-container">
+        <div class="tab">Search</div>
+        <input type="text" class="search-bar" placeholder="Search bar">
+    </div>
+
+    <!-- main content -->
+    <main class="main-content">
+        <section class="qa-section">
+            <h1>Q&A</h1>
+            <p class="qa-description">Ask a question to get answers form experts, or start a scientific discussion with your peers.</p>
+            
+            <div class="action-buttons">
+                <div class="user-action">
+                    <img src="images/user-avatar.png" alt="User Avatar" class="avatar">
+                    <div class="buttons">
+                        <button class="ask-btn">Ask question</button>
+                        <button class="discuss-btn">Start a discussion</button>
+                    </div>
+                </div>
+            </div>
+            <p style= "font-family: serif; font-size: 1.5rem;"><b>What you might want to ask</b></p>
+
+            <!-- Question list -->
+            <div class="question-list">
+                <div class="question-card">
+                    <div class="placeholder-content">
+                    <p class="qa-might-ask">What is Digital Humanities?</p></div>
+                    <p style="color:dimgray;"> <u>Also asked by User1009/ User1000...</u></p>
+                </div>
+                <div class="question-card">
+                    <div class="placeholder-content">
+                    <p class="qa-might-ask">The urban history of Philipine</p>
+                    </div>
+                    <p style="color:dimgray;"> <u>Also asked by User1001/ User1002...</u></p>
+                </div>
+                <div class="question-card">
+                    <div class="placeholder-content">
+                    <p class="qa-might-ask">What is the thick mapping?</p>
+                    </div>
+                    <p style="color:dimgray;"> <u>Also asked by User1003/ User1004...</u></p>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Left side content -->
+                <div class="post-cardlist">
+                    <div class="post-card">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <div class="avatar">A</div>
+                                <div class="header-text">
+                                    <h3>User1</h3>
+                                    <p class="subhead">Postguadrate student in KCL </p>
+                                </div>
+                            </div>
+                            <button class="more-options">⋮</button>
+                        </div>
+                        <div class="card-image"><img src="images/thickmapping.png"></div>
+                        <div class="card-content">
+                            <h3 class="title">The discussion on application of thick mapping in Digital humanities</h3>
+                            <p class="description">Posted in 3 days ago</p>
+                            <div class="card-actions">
+                                <button class="action-btn">Comment</button>
+                                <button class="action-btn enabled">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <div class="avatar">A</div>
+                                <div class="header-text">
+                                    <h3>User2</h3>
+                                    <p class="subhead">Digital humanities professor in Cambridge University</p>
+                                </div>
+                            </div>
+                            <button class="more-options">⋮</button>
+                        </div>
+                        <div class="card-image"><img src="images/questionimage.png"></div>
+                        <div class="card-content">
+                            <h3 class="title">How can I mapping in the HyperCities website</h3>
+                            <p class="description">Posted in 5 days ago</p>
+                            <div class="card-actions">
+                                <button class="action-btn">Comment</button>
+                                <button class="action-btn enabled">Share</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <!-- right side content -->
+                <aside class="sidebar">
+                    <div class="sidebar-card">
+                        <h3>My background</h3>
+                        <div class="placeholder-content"><div class="text-group">
+                            <div class="header">Undergraduate:</div>
+                                </div>
+                            <div class="source">Portuguese</div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="sidebar-card">
+                        <h3>News you may be interested in</h3>
+                        <div class="news-list">
+                            <div class="placeholder-content"><p class="Newstitle"><a href="https://www.ordnancesurvey.co.uk/blog/un-report-on-use-of-geospatial-data-for-climate-resilience">How the use of geospatial data is transforming climate action</a></p>
+                            <nl style="font-size:14px;color:dimgrey;" >Source from:Ordnance Survey</nl></div>
+                            <div class="placeholder-content"></div>
+                            <div class="placeholder-content"></div>
+                            <div class="placeholder-content"></div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Societies</h3>
+                        <div class="follow-list">
+                            <div class="placeholder-content"><b style="padding: 1.5rem;font-family: serif; font-size: 18px;">Philippin urban history study group</b>
+                            </div>
+                            <div class="placeholder-content"></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer navi -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Use cases</h3>
+                <ul>
+                    <li>UI design</li>
+                    <li>UX design</li>
+                    <li>Wireframing</li>
+                    <li>Diagramming</li>
+                    <li>Brainstorming</li>
+                    <li>Online whiteboard</li>
+                    <li>Team collaboration</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li>Design</li>
+                    <li>Prototyping</li>
+                    <li>Development features</li>
+                    <li>Design systems</li>
+                    <li>Collaboration features</li>
+                    <li>Design process</li>
+                    <li>FigJam</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Blog</li>
+                    <li>Best practices</li>
+                    <li>Colors</li>
+                    <li>Color wheel</li>
+                    <li>Support</li>
+                    <li>Developers</li>
+                    <li>Resource library</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,431 @@
+/* Main content section CSS */
+.banner {
+    background-image: url('../images/map-background.png');
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.sign-in {
+    justify-self: end;
+    
+}
+
+.buttons button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+.intro{
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* Home Page Specific Styles */
+.features {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search-icon {
+    background-image: url('../images/search-icon.png');
+}
+
+.share-icon {
+    background-image: url('../images/share-icon.png');
+}
+
+.crowd-icon {
+    background-image: url('../images/crowd-icon.png');
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.project-aim {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-section {
+    margin-bottom: 4rem;
+}
+
+.project-section h2,
+.aim-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.project-section .content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.project-section .text {
+    flex: 1;
+}
+
+.project-section .text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.image-placeholder {
+    flex: 1;
+    height: 300px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.image-placeholder::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(45deg, transparent 45%, #ddd 45%, #ddd 55%, transparent 55%),
+                linear-gradient(-45deg, transparent 45%, #ddd 45%, #ddd 55%, transparent 55%);
+}
+
+.aim-section {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.aim-section .text {
+    flex: 1;
+}
+
+.aim-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/*Add full-width image style */
+.full-width-image {
+    width: 100%;
+    height: 300px;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.full-width-image .image-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    /* When there is an actual image, use the following properties */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Temporary use of placeholder patterns */
+.full-width-image .image-container {
+    position: relative;
+}
+
+.full-width-image .image-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(45deg, transparent 45%, #ddd 45%, #ddd 55%, transparent 55%),
+                linear-gradient(-45deg, transparent 45%, #ddd 45%, #ddd 55%, transparent 55%);
+}
+
+/* Adding Timeline Styles */
+.history {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #EFB23E;
+}
+
+.timeline-line .arrow {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #EFB23E;
+}
+
+.timeline-points {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #EFB23E;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.year {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* Add team section styles */
+.team {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.member-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1rem;
+}
+
+.member-desc {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem 1rem;
+}
+.member-desc2 {
+    color:black;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding:0 1rem 1rem;
+    
+}
+/*responsive layout */
+@media (max-width: 900px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Add Responsive Styles */
+@media (max-width: 1024px) {
+    .feature-cards {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .project-aim {
+        padding: 2rem 1rem;
+    }
+
+    .project-section .content,
+    .aim-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        min-height: 400px;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project-section h2,
+    .aim-section h2 {
+        font-size: 2rem;
+    }
+
+    .project-section .text p {
+        font-size: 0.9rem;
+    }
+
+    .aim-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        min-height: 300px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .project-section h2,
+    .aim-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .image {
+        height: 200px;
+    }
+}
